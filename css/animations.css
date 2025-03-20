@@ -1,0 +1,41 @@
+/* 入场动画 */
+.fade-in {
+    opacity: 0;
+    animation: fadeIn 1s ease forwards;
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
+
+.slide-up {
+    transform: translateY(30px);
+    opacity: 0;
+    animation: slideUp 0.8s cubic-bezier(0.22, 0.61, 0.36, 1) forwards;
+}
+
+@keyframes slideUp {
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* 延迟动画 */
+.delay-1 {
+    animation-delay: 0.3s;
+}
+
+/* 滚动触发动画 */
+.observe {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.6s ease;
+}
+
+.observe.visible {
+    opacity: 1;
+    transform: translateY(0);
+}

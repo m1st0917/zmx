@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>李明 - 个人主页</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animations.css">
+</head>
+<body>
+    <nav class="main-nav">
+        <div class="nav-container">
+            <a href="/" class="logo">LM</a>
+            <button class="menu-toggle" aria-label="导航菜单">
+                <span class="hamburger"></span>
+            </button>
+            <div class="nav-links">
+                <a href="#home" class="active">首页</a>
+                <a href="about.html">关于我</a>
+                <a href="contact.html">联系</a>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <section id="hero" class="fade-in">
+            <div class="hero-content">
+                <h1 class="slide-up">朱孟璇</h1>
+                <p class="subtitle delay-1">硕士 | 华中农业大学 | 山东临沂</p>
+            </div>
+        </section>
+
+        <section id="bio" class="content-section observe">
+            <div class="md-content" data-src="content/bio.md"></div>
+            <div class="hobbies">
+                <h2>兴趣爱好</h2>
+                <ul class="fade-in">
+                    <li>🎵 音乐欣赏与创作</li>
+                    <li>🏸 羽毛球与游泳</li>
+                    <li>📖 技术文档翻译</li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <script src="js/marked.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
